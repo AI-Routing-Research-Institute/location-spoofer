@@ -142,7 +142,7 @@ test -s "$ROOT/docs/onboarding-screenshots/shadowrocket/shadowrocket-module-impo
 grep -q 'presentSuccessfulOperationTip(.activation)' "$ROOT/App/MapHomeView.swift" || fail "third-party save must present the activation tip"
 grep -q 'presentSuccessfulOperationTip(.deactivation)' "$ROOT/App/MapHomeView.swift" || fail "third-party clear must present the deactivation tip"
 grep -q 'if spoofState == .active' "$ROOT/App/MapHomeView.swift" || fail "manual help must follow the shared spoof state"
-grep -q 'MARKETING_VERSION: "1.0.8"' "$ROOT/project.yml" || fail "marketing version must be 1.0.8"
-grep -q 'CURRENT_PROJECT_VERSION: "10"' "$ROOT/project.yml" || fail "build version must be 10"
+grep -q 'MARKETING_VERSION: "1.0.9"' "$ROOT/project.yml" || fail "marketing version must be 1.0.9"
+grep -q 'CURRENT_PROJECT_VERSION: "11"' "$ROOT/project.yml" || fail "build version must be 11"
 
 echo "PASS: third-party proxy mode contract"
