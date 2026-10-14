@@ -6,6 +6,7 @@
 
 ## 已发布
 
+- [v1.0.9](https://github.com/xweiba/location-spoofer/releases/tag/v1.0.9) — 2026-10-14
 - [v1.0.8](https://github.com/xweiba/location-spoofer/releases/tag/v1.0.8) — 2026-09-24
 - [v1.0.7](https://github.com/xweiba/location-spoofer/releases/tag/v1.0.7) — 2026-09-11
 - [v1.0.6](https://github.com/xweiba/location-spoofer/releases/tag/v1.0.6) — 2026-09-01

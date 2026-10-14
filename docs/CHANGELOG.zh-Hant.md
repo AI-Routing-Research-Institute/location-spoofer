@@ -4,6 +4,7 @@
 
 ## 已發佈
 
+- [v1.0.9](releases/v1.0.9.zh-Hant.md) — 2026-10-14（[English](releases/v1.0.9.en.md) · [简体中文](releases/v1.0.9.md)）
 - [v1.0.8](releases/v1.0.8.zh-Hant.md) — 2026-09-24（[English](releases/v1.0.8.en.md) · [简体中文](releases/v1.0.8.md)）
 - [v1.0.7](releases/v1.0.7.md) — 2026-09-11（簡體中文）
 - [v1.0.6](releases/v1.0.6.md) — 2026-09-01（簡體中文）

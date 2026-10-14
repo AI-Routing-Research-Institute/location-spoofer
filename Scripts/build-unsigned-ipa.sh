@@ -25,6 +25,13 @@ if [ ! -d "$APP" ]; then
   exit 1
 fi
 
+# A missing launch resource makes iOS use a smaller legacy compatibility viewport.
+LAUNCH_STORYBOARD="$(/usr/libexec/PlistBuddy -c 'Print :UILaunchStoryboardName' "$APP/Info.plist")"
+if [ -z "$LAUNCH_STORYBOARD" ] || [ ! -d "$APP/$LAUNCH_STORYBOARD.storyboardc" ]; then
+  echo "Compiled launch storyboard is missing from the app bundle" >&2
+  exit 1
+fi
+
 mkdir -p build/UnsignedIPA/Payload dist
 ditto "$APP" "build/UnsignedIPA/Payload/PaopaoLocationSpoofer.app"
 BUILD_TIMESTAMP="${BUILD_TIMESTAMP:-$(date '+%Y%m%d-%H%M%S')}"
